@@ -1,0 +1,694 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: MOntserratB;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: MOntserratR;
+  src: url(../fonts/Montserrat-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+html {
+  font-family: MOntserratB;
+}
+/* body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+} */
+/* базовые настройки */
+.conteiner{
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+/* хедер */
+.firs_block {
+  min-height: 800px;
+  background-color: #e5e5e5;
+  position: relative;
+  overflow: hidden; /* вырезает все что выходит за блок */
+  margin-bottom: 30px;
+}
+.header_conteiner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  height: 69px;
+  align-items: center; /* отцентрировали блоки по высоте */
+  margin-bottom: 30px;
+}
+
+.header_conteiner_list {
+  display: flex;
+}
+
+.header_conteiner_items {
+  margin-right: 16px;
+}
+
+.header_conteiner_items:last-child {
+  margin-right: 0;
+}
+.header_conteiner_items_link {
+  color: black;
+  text-decoration: none;
+}
+/* основной блок обертка */
+.header_conteiner_main {
+  display: flex;
+  position: relative;
+}
+/* основной блок левая секция */
+.header_conteiner_left_wrapper {
+  position: relative;
+}
+.header_conteiner_left_wrapper_photo {
+  /* фото гитариста */
+  position: relative;
+  z-index: 4;
+}
+/* цветные блоки за спиной гитариста */
+.header_conteiner_left_wrapper_grey_box {
+  position: absolute;
+  left: 10px;
+  top: 190px;
+  width: 608.97px;
+  height: 220px;
+  background: #e2e2e2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  transform: rotate(-36.15deg);
+}
+.header_conteiner_left_wrapper_blue_box {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  width: 565.95px;
+  height: 220px;
+  background: #5290ea;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  transform: rotate(-64deg);
+}
+.header_conteiner_left_wrapper_red_box {
+  position: absolute;
+  left: -30px;
+  top: 160px;
+  width: 618.43px;
+  height: 220px;
+  background: #f28b64;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  transform: rotate(-50.81deg);
+}
+/* правая секция первого блока */
+/* правый блок позиционирование  */
+.header_conteiner_right_wrapper {
+  position: absolute;
+  top: 150px;
+  right: -1px;
+  width: 372px;
+  z-index: 6;
+}
+/* блок иконок */
+.right_wrapper_icons_icons_list {
+  display: flex;
+}
+.right_wrapper_icons_icons_items {
+  margin-right: 15px;
+}
+.right_wrapper_icons_icons_items:last-child {
+  margin-right: 0px;
+}
+/* заголовок текст */
+.title {
+  font-size: 72px;
+  margin-bottom: 5px;
+  font-family: MOntserratB;
+}
+.right_wrapper_text_box {
+  position: relative;
+  font-family: MOntserratR;
+}
+
+.right_wrapper_text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+/* кнопки в правом блоке */
+.right_wrapper_button_block {
+  display: flex;
+  height: 46px;
+  align-items: center;
+}
+.button {
+  border: none;
+  width: 200px;
+  height: 60px;
+  background: #f28b64;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  font-size: 18px;
+  color: white;
+  margin-right: 32px;
+}
+.right_wrapper_qesten_img {
+  margin-right: 12px;
+  width: 46px;
+  height: 46px;
+}
+.right_wrapper_qesten {
+  display: flex;
+  height: 46px;
+  align-items: center;
+}
+/* элепсы в первом блоке */
+.header_conteiner_elepse {
+  position: absolute;
+  top: 129px;
+  right: -10px;
+  z-index: 1;
+}
+.elepse {
+  width: 180px;
+  height: 180px;
+}
+
+.conteiner_elepse_big {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  top: 650px;
+  right: -120px;
+  transform: rotate(45deg);
+}
+/* вторая секция */
+
+.second_section {
+  min-height: 630px;
+  overflow: hidden; /* вырезае dqfqт все что выходит за блок */
+}
+.second_section_conteiner {
+  position: relative;
+}
+.second_section_title {
+  margin-bottom: 40px;
+}
+.second_section_guitar_box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.guitar_frame {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 10px;
+  width: 360px;
+  height: 360px;
+}
+.second_section_grey_frame {
+  background-color: #e2e2e2;
+}
+.second_section_red_frame {
+  background: #f28b64;
+}
+.second_section_blue_frame {
+  background: #5290ea;
+}
+.guitar_frame_photo {
+  width: 197px;
+  height: 335px;
+}
+
+.guitar_frame_text {
+  position: absolute;
+  top: 140px;
+  right: -60px;
+  width: 277px;
+  margin: 0 auto;
+  font-size: 36px;
+  color: #000000;
+  text-align: center;
+  transform: rotate(90deg);
+}
+/* бокс с достижениями */
+.second_section_achievements_box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.achievements_box_frame {
+  display: flex;
+}
+.achievements_box_frame_img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+span {
+  font-size: 48px;
+  font-family: MOntserratB;
+}
+.achievements_box_frame_text {
+  font-size: 18px;
+  font-family: MOntserratR;
+}
+.second_section_elepce_one {
+  position: absolute;
+  top: 30px;
+  right: -84px;
+  z-index: -1;
+}
+.second_section_elepce_two {
+  position: absolute;
+  top: 340px;
+  right: 1058px;
+  z-index: -1;
+}
+/* третья секция */
+
+.tree_section {
+  background-color: #f0f0f0;
+  overflow: hidden; /* вырезает все что выходит за блок */
+}
+.tree_section_conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 640px;
+  position: relative;
+}
+.tree_section_conteiner_left_box {
+  position: relative;
+}
+.tree_section_conteiner_right_text {
+  width: 400px;
+  margin-bottom: 30px;
+  font-family: MOntserratR;
+}
+.tree_section_conteiner_button_block {
+  display: flex;
+}
+
+.tree_section_conteiner_left_subtract {
+  position: absolute;
+  top: -37px;
+  right: 235px;
+}
+.tree_section_conteiner_left_elepce {
+  position: absolute;
+  top: -95px;
+  right: 105px;
+  width: 230px;
+  height: 230px;
+}
+
+.tree_section_conteiner_right_title {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.tree_section_conteiner_free_elepce {
+  position: absolute;
+  top: -140px;
+  right: -260px;
+  width: 282px;
+  height: 282px;
+}
+/* футер  */
+
+.footer {
+  height: 272px;
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+.footer_img {
+  margin-right: 100px;
+  position: absolute;
+  top: 0px;
+  right: 486px;
+}
+.footer_right_block {
+  padding-top: 40px;
+}
+.footer_right_block_title {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* верстка адаптива под разные экраны  */
+/* размер менее 1024px */
+@media (max-width: 1199px) {
+  /* первый блок */
+  .conteiner {
+    width: 960px;
+  }
+  .header_conteiner_left_wrapper_photo {
+    width: 600px;
+  }
+  .header_conteiner_left_wrapper_red_box {
+    width: 150px;
+    height: 450px;
+    transform: rotate(40deg);
+    left: 150px;
+    top: -50px;
+  }
+  .header_conteiner_left_wrapper_grey_box {
+    width: 400px;
+    height: 150px;
+    transform: rotate(330deg);
+    left: 55px;
+    top: 125px;
+  }
+  .header_conteiner_left_wrapper_blue_box {
+    width: 400px;
+    height: 150px;
+    transform: rotate(288deg);
+    left: -27px;
+    top: 93px;
+  }
+  .firs_block {
+    min-height: 567px;
+  }
+  /* второй блок */
+  .guitar_frame {
+    width: 300px;
+    height: 300px;
+  }
+  .guitar_frame_photo {
+    width: 153px;
+    height: 270px;
+  }
+  .guitar_frame_text {
+    font-size: 30px;
+    top: 118px;
+  }
+}
+/* размер монитора менее 991px */
+@media (max-width: 991px) {
+  .conteiner {
+    width: 720px;
+  }
+  .header_conteiner_left_wrapper_photo {
+    width: 500px;
+    position: absolute;
+    top: 0px;
+    left: -100px;
+  }
+  .header_conteiner_left_wrapper_red_box {
+    width: 100px;
+    height: 350px;
+    transform: rotate(40deg);
+    left: 20px;
+    top: -15px;
+  }
+  .header_conteiner_left_wrapper_grey_box {
+    width: 100px;
+    height: 300px;
+    transform: rotate(53deg);
+    left: 64px;
+    top: 17px;
+  }
+  .header_conteiner_left_wrapper_blue_box {
+    width: 100px;
+    height: 300px;
+    transform: rotate(22deg);
+    left: -24px;
+    top: -4px;
+  }
+  .header_conteiner_right_wrapper {
+    top: 30px;
+  }
+  .header_conteiner_elepse {
+    top: 20px;
+    right: -50px;
+  }
+  .firs_block {
+    min-height: 500px;
+  }
+  .guitar_frame {
+    width: 230px;
+    height: 230px;
+  }
+  .guitar_frame_photo {
+    width: 110px;
+    height: 190px;
+  }
+  .guitar_frame_text {
+    font-size: 25px;
+    top: 105px;
+    right: -85px;
+  }
+}
+
+@media (max-width: 767px) {
+  .conteiner {
+    width: 540px;
+  }
+  .header_conteiner_left_wrapper_photo {
+    width: 400px;
+    position: absolute;
+    top: 50px;
+    left: -60px;
+  }
+  .header_conteiner_right_wrapper {
+    top: 33px;
+    right: -90px;
+  }
+  .header_conteiner_left_wrapper_red_box {
+    width: 70px;
+    height: 281px;
+    transform: rotate(30deg);
+    left: 27px;
+    top: 25px;
+  }
+  .header_conteiner_left_wrapper_grey_box {
+    width: 68px;
+    height: 200px;
+    transform: rotate(43deg);
+    left: 80px;
+    top: 61px;
+  }
+  .header_conteiner_left_wrapper_grey_box {
+    width: 68px;
+    height: 200px;
+    transform: rotate(43deg);
+    left: 80px;
+    top: 61px;
+  }
+  .header_conteiner_right_wrapper {
+    top: 60px;
+    right: -65px;
+  }
+  .elepse {
+    width: 150px;
+    height: 150px;
+  }
+  .header_conteiner_elepse {
+    top: 26px;
+    right: -54px;
+  }
+  .title {
+    font-size: 30px;
+    margin-bottom: 5px;
+    font-family: MOntserratB;
+  }
+  .right_wrapper_text {
+    width: 290px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .button {
+    border: none;
+    width: 180px;
+    height: 50px;
+    background: #f28b64;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 100px;
+    font-size: 15px;
+    color: white;
+    margin-right: 20px;
+  }
+  .right_wrapper_qesten_text {
+    font-size: 15px;
+  }
+  .firs_block {
+    min-height: 470px;
+  }
+  .guitar_frame {
+    width: 170px;
+    height: 170px;
+  }
+  .guitar_frame_photo {
+    width: 80px;
+    height: 140px;
+  }
+  .guitar_frame_text {
+    font-size: 20px;
+    top: 70px;
+    right: -102px;
+  }
+  .second_section {
+    min-height: 317px;
+    overflow: hidden;
+  }
+  .second_section_elepce_one {
+    position: absolute;
+    top: 2px;
+    right: -93px;
+    z-index: -1;
+  }
+  .achievements_box_frame_img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+  }
+  span {
+    font-size: 25px;
+  }
+  .achievements_box_frame_text {
+    font-size: 10px;
+  }
+  .tree_section_conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+    position: relative;
+  }
+  .tree_section_conteiner_left_elepce {
+    position: absolute;
+    top: -137px;
+    right: -527px;
+  }
+  .tree_section_conteiner_left_subtract {
+    position: absolute;
+    top: -16px;
+    right: -27px;
+    width: 177px;
+  }
+  .tree_section_conteiner_right_text {
+    width: 320px;
+    margin-bottom: 15px;
+    font-family: MOntserratR;
+  }
+  .tree_section_conteiner_left_title {
+    display: none;
+  }
+
+  .footer {
+    height: 147px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+  }
+  .footer_right_block {
+    padding-top: 25px;
+  }
+  .footer_img {
+    position: absolute;
+    top: -14px;
+    right: 312px;
+    height: 161px;
+  }
+  .footer_right_block_hr {
+    position: absolute;
+    top: 29px;
+    right: 167px;
+  }
+}
+
+@media (max-width: 575px) {
+  .conteiner {
+    width: 100%;
+  }
+  .firs_block {
+    min-height: 420px;
+  }
+  .header_conteiner_logo {
+    padding-left: 5px;
+    width: 90px;
+  }
+  .header_conteiner_list {
+    padding-right: 10px;
+  }
+  .header_conteiner_main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  .header_conteiner_right_wrapper {
+    position: relative;
+  }
+  .header_conteiner_left_wrapper {
+    display: none;
+  }
+  .right_wrapper_button_block {
+    display: block;
+  }
+  .button {
+    margin-bottom: 20px;
+  }
+  .header_conteiner_elepse {
+    display: none;
+  }
+  .conteiner_elepse_big {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 111px;
+    right: -69px;
+  }
+  .second_section_guitar_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    flex-direction: column;
+    align-items: center;
+    height: 700px;
+  }
+  .guitar_frame {
+    width: 220px;
+    height: 220px;
+  }
+  .guitar_frame_photo {
+    width: 110px;
+    height: 190px;
+  }
+  .guitar_frame_text {
+    font-size: 20px;
+    top: 101px;
+    right: -102px;
+  }
+  .second_section_elepce_two {
+    position: absolute;
+    top: 550px;
+    right: 435px;
+    z-index: -1;
+  }
+  .second_section_achievements_box {
+    margin-bottom: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .achievements_box_frame {
+    margin-bottom: 20px;
+  }
+  .tree_section_conteiner_right_box {
+    position: relative;
+  }
+}
